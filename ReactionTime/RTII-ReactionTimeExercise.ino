@@ -126,7 +126,7 @@ void CountdownToTest() {
       analogWrite(testLED, 0);
       delay(250);
     }
-    Serial.println("----- LOG BEGIN REACTION TIME -----");
+    Serial.println("----- LOG BEGIN REACTION TIME (sep=tab, col=4, label=reactiontime) -----");
     Serial.println("TrialNo\tModal\tIntens\tReactionTime");
 }
 
@@ -145,4 +145,3 @@ void WaitForButtonRelease() {
   while(digitalRead(inputButton) == HIGH) {
   }
 }
-

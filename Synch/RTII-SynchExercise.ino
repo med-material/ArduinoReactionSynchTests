@@ -182,7 +182,7 @@ void CountdownToTest() {
       Serial.println(i);
       delay(1000);
     }
-    Serial.println("----- LOG BEGIN SYNC TEST -----");
+    Serial.println("----- LOG BEGIN SYNC TEST (sep=tab, col=5, label=synch)-----");
     Serial.println("TrialNo\tModal\tIntens\tReactionTime\tMusicalAbility");
 }
 
