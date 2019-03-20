@@ -7,7 +7,7 @@ int deviceID;
 //  ************** STUDENTS CHANGE VARIABLES BELOW
 
 // Choose if the test should be used with vibration or not
-bool useVibration = true;
+bool useVibration = false;
 
 //  ********************************************
 
@@ -78,6 +78,7 @@ void loop() {
           }
     
           if(buttonClicked == false && digitalRead(inputButton) == HIGH) {
+            Serial.print("#");
             buttonClicked = true;
             int deltaTime = millis() - timeUntilLED;
             Serial.print(id);
@@ -116,8 +117,9 @@ void loop() {
 
 
 void CountdownToTest() {
-    Serial.println("Test begins in:");
+    Serial.println("#Test begins in:");
     for(int i = 3; i > 0; i--) {
+      Serial.print("#");
       Serial.println(i);
       analogWrite(testVib, highIntensityValue);
       analogWrite(testLED, highIntensityValue);
@@ -126,11 +128,14 @@ void CountdownToTest() {
       analogWrite(testLED, 0);
       delay(250);
     }
+    Serial.print("#");
     Serial.println("----- LOG BEGIN REACTION TIME (sep=tab, col=4, label=reactiontime) -----");
+    Serial.print("#");
     Serial.println("TrialNo\tModal\tIntens\tReactionTime");
 }
 
 void EndOfTest() {
+    Serial.print("#");
     Serial.println("----- LOG END REACTION TIME -----");
 
     digitalWrite(testLED, LOW);

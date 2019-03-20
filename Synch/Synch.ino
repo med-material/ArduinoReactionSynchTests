@@ -105,6 +105,7 @@ void loop() {
 
           // Writes the output in the console
           if(buttonClicked == false && digitalRead(inputButton) == HIGH) {
+            Serial.print("#");
             buttonClicked = true;
             logRegistered = true;
             int deltaTime = millis() - timeUntilLED;
@@ -142,6 +143,7 @@ void loop() {
 
         // Registers a null data point if the user did not press the button in time
         if(logRegistered == false) {
+          Serial.print("#");
           Serial.print(id);
           if(randomTest % 2 == 0) {
             if(useVibration) {
@@ -177,17 +179,21 @@ void loop() {
 
 
 void CountdownToTest() {
-    Serial.println("Test begins in:");
+    Serial.println("#Test begins in:");
     for(int i = 3; i > 0; i--) {
+      Serial.print("#");
       Serial.println(i);
       delay(1000);
     }
+    Serial.print("#");
     Serial.println("----- LOG BEGIN SYNC TEST (sep=tab, col=5, label=synch)-----");
+    Serial.print("#");
     Serial.println("TrialNo\tModal\tIntens\tReactionTime\tMusicalAbility");
 }
 
 
 void EndOfTest() {
+    Serial.print("#");
     Serial.println("----- LOG END SYNC TEST -----");
 
     digitalWrite(userLED, LOW);
