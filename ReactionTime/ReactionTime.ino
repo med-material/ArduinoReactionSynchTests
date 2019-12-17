@@ -12,7 +12,7 @@ bool useVibration = false;
 //  ********************************************
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(inputButton, INPUT);
   pinMode(testLED, OUTPUT);
   pinMode(testVib, OUTPUT);
