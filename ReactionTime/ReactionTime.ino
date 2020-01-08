@@ -1,5 +1,5 @@
-int inputButton = 2;
-int testLED = 10;
+int inputButton = 12;
+int testLED = 11;
 int testVib = 3;
 
 int deviceID;
