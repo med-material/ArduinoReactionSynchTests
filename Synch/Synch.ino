@@ -1,8 +1,8 @@
 int inputButton = 12;
 int userLED = 10;
-int userVib = 2;
+int userVib = 3;
 int testLED = 11;
-int testVib = 1;
+int testVib = 5;
 
 //  ************** STUDENTS CHANGE VARIABLES BELOW
 
