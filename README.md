@@ -23,5 +23,5 @@ The Reaction Time Tests outputs 4 columns.
  * Trail No. = Trial Number. After 40 trials the test ends.
  * Modal = Modality. Possible values are ERM and LED
  * Intens = Intensity. First 5 trials will show 'Low', next 5 trials will show 'High'
- * ReactionTime = The measured reaction time (can be negative if the user pressed earlier than the stimulus appeared).
+ * BeatOffset = The measured offset from the beat in milliseconds (can be negative if the user pressed earlier than the stimulus appeared) (the Arduino Monitor mentions this column as ReactionTime).
  * MusicalAbility = This is a hardcoded variable that users have to set in the arduino code to reflect their musical ability.
