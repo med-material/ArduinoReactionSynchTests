@@ -1,4 +1,7 @@
 # ArduinoReactionSynchTests
+See below , the arduino setup for this firmware
+![RTII-ReactionTimeExercise-Layout](https://user-images.githubusercontent.com/23449138/73547403-2144b200-443f-11ea-81e1-646ca4df7db4.png)
+
 ![Arduino Reaction Time Test Synch Exercise](https://raw.githubusercontent.com/med-material/ArduinoReactionSynchTests/master/reactiontimesynch.png)
 
 Arduino source code for the Reaction Time Test and Synch Exercise.
