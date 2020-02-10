@@ -158,7 +158,7 @@ void loop() {
               Serial.print("\tLED\tHigh\t");
             }
           }
-          Serial.print("NA\t");
+          Serial.print("NULL\t");
           Serial.println(musicalAbility);
         }
         
